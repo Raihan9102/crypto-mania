@@ -10,7 +10,7 @@
 .crypto-news h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  background-color: #25006b; /* Warna latar belakang untuk heading */
+  /* Warna latar belakang untuk heading */
   padding: 0.5rem;
   border-radius: 5px;
 }
@@ -26,34 +26,34 @@
   padding: 1rem;
   border: 2px solid #cccccc;
   border-radius: 5px;
-  background-color: #ffffff; /* Warna latar belakang untuk item daftar */
+  background-color: none; /* Warna latar belakang untuk item daftar */
 }
 
 .crypto-news a {
   text-decoration: none;
   color: #ffffff;
-  background-color: #25006b; /* Warna latar belakang untuk tautan */
+  background-color: none; /* Warna latar belakang untuk tautan */
   padding: 0.2rem 0.5rem;
   border-radius: 3px;
 }
 
 .crypto-news a:hover {
   text-decoration: underline;
-  background-color: #25006b; /* Warna latar belakang saat hover */
+  background-color: none; /* Warna latar belakang saat hover */
 }
 
 .crypto-news em {
   font-style: italic;
   color: #ffffff;
-  background-color: #000304; /* Warna latar belakang untuk teks miring */
+  background-color: none; /* Warna latar belakang untuk teks miring */
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
 }
 
 .crypto-news p {
   margin: 0.5rem 0 0;
-  color: #000000;
-  background-color: #ffffff; /* Warna latar belakang untuk paragraf */
+  color: #ffffff;
+  background-color: none; /* Warna latar belakang untuk paragraf */
   padding: 0.5rem;
   border-radius: 5px;
 }

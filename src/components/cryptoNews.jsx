@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import './cryptoNews.css';
+import React, { useEffect, useState } from "react";
+import "./cryptoNews.css";
 
 const API_KEY = "42eb1bbd002b48419bc71c87d80100e1";
 const API_URL = `https://newsapi.org/v2/everything?q=cryptocurrency&language=en&pageSize=10&sortBy=publishedAt&apiKey=${API_KEY}`;
@@ -42,7 +42,8 @@ function CryptoNews() {
               <strong>{article.title}</strong>
             </a>
             <div>
-              <em>{article.source.name}</em> | {new Date(article.publishedAt).toLocaleString()}
+              <em>{article.source.name}</em> |{" "}
+              {new Date(article.publishedAt).toLocaleString()}
             </div>
             <p>{article.description}</p>
           </li>

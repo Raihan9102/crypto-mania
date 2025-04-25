@@ -36,6 +36,7 @@ const Coins = (props) => {
         <h1>Crypto Marketplace</h1>
         <p>Selamat Datang di Crypto Mania Marketplace</p>
       </div>
+
       <div>
         <div className="search">
           <input
@@ -81,6 +82,9 @@ const Coins = (props) => {
           <CryptoNews />
         </div>
       </div>
+      <footer class="footer">
+        <p>2025 CryptoMania</p>
+      </footer>
     </div>
   );
 };

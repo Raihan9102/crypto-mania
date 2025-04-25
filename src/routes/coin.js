@@ -207,12 +207,16 @@ const Coin = () => {
               <div className="price-history">
                 <h3>Price History</h3>
                 <p>
-                  The chart below shows the price history of {coin.name} over the
-                  last 360 days.
+                  The chart below shows the price history of {coin.name} over
+                  the last 360 days.
                 </p>
-              <div className="chart">
-                {loading ? <p>Loading chart...</p> : <Line data={chartData} />}
-              </div>  
+                <div className="chart">
+                  {loading ? (
+                    <p>Loading chart...</p>
+                  ) : (
+                    <Line data={chartData} />
+                  )}
+                </div>
               </div>
             </div>
           </div>
