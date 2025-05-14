@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import Coinitem from "./Coinitem";
 import "./Coins.css";
-import Coin from "../routes/coin";
-import { Link } from "react-router-dom";
-import CryptoNews from "./cryptoNews";
 
 const Coins = (props) => {
   const [search, setSearch] = useState("");
@@ -47,23 +43,35 @@ const Coins = (props) => {
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
-        <div className="heading">
-          <p>#</p>
-          <p className="coin-name">Coins</p>
-          <p>Price</p>
-          <p>24h</p>
-          <p className="hide-mobile">Volume</p>
-          <p className="hide-mobile">Market Cap</p>
+        <div className="table-container">
+          <table className="crypto-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Coins</th>
+                <th>Price</th>
+                <th>24h</th>
+                <th className="hide-mobile">Volume</th>
+                <th className="hide-mobile">Market Cap</th>
+              </tr>
+            </thead>
+            <tbody>
+              {currentCoins.map((coins) => (
+                <tr key={coins.id} onClick={() => window.location.href = `/coin/${coins.id}`} className="crypto-row">
+                  <td>{coins.market_cap_rank}</td>
+                  <td className="img-symbol">
+                    <img src={coins.image} alt="" />
+                    {coins.symbol.toUpperCase()}
+                  </td>
+                  <td>${coins.current_price.toLocaleString()}</td>
+                  <td>{coins.price_change_percentage_24h.toFixed(2)}%</td>
+                  <td className="hide-mobile">${coins.total_volume.toLocaleString()}</td>
+                  <td className="hide-mobile">${coins.market_cap.toLocaleString()}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
-
-        {currentCoins.map((coins) => {
-          return (
-            <Link to={`/coin/${coins.id}`} element={<Coin />} key={coins.id}>
-              <Coinitem coins={coins} />
-            </Link>
-          );
-        })}
-
         <div className="pagination">
           <button onClick={prevPage} disabled={currentPage === 1}>
             Previous
@@ -74,14 +82,8 @@ const Coins = (props) => {
           >
             Next
           </button>
-        </div>
-
-        {/* Render the CryptoNews component */}
-        <div className="crypto-news-section">
-          <h2>Latest Cryptocurrency News</h2>
-          <CryptoNews />
-        </div>
-      </div>
+        </div>    
+      </div>  
       <footer class="footer">
         <p>2025 CryptoMania</p>
       </footer>

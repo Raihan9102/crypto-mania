@@ -1,13 +1,14 @@
 .body {
-  margin-top: 100px;
+  margin-top: 40px;
 }
+
 .coin-container .content {
+  padding: 8px;
   max-width: 740px;
   margin: 20px auto;
-  padding: 2px;
   display: flex;
   flex-direction: column;
-  background-color: #26272b;
+  background-color: var(--clr);
   box-shadow: 0px 0px 12px #18191b;
   border-radius: 10px;
 }
@@ -18,9 +19,9 @@
 }
 
 .rank-btn {
-  border: 1px solid #6900ff;
-  box-shadow: 0px 0px 8px #6900ff;
-  background-color: #6900ff;
+  border: 1px solid var(--bg);
+  box-shadow: 0px 0px 8px #18191b;
+  background-color: var(--bg);
   border-radius: 8px;
   padding: 0.5rem;
   display: flex;
@@ -37,10 +38,22 @@
   margin: 1rem 0;
 }
 
+.info .coin-heading img {
+  width: 80px; /* Increase the size of the image */
+  height: auto;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.info .coin-heading p {
+  font-size: 30px;
+}
+
 .info .coin-price {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 20px;
 }
 
 .info p {
@@ -58,7 +71,26 @@ th {
 }
 
 th {
-  background-color: #333;
+  background-color: var(--bg);
+}
+
+/* Add rounded corners to the table headers and cells */
+th:first-child {
+  border-top-left-radius: 10px; /* Rounded top-left corner */
+  border-bottom-left-radius: 10px; /* Rounded bottom-left corner */
+}
+
+th:last-child {
+  border-top-right-radius: 10px; /* Rounded top-right corner */
+  border-bottom-right-radius: 10px; /* Rounded bottom-right corner */
+}
+
+td:first-child {
+  border-bottom-left-radius: 10px; /* Rounded bottom-left corner */
+}
+
+td:last-child {
+  border-bottom-right-radius: 10px; /* Rounded bottom-right corner */
 }
 
 .stats {

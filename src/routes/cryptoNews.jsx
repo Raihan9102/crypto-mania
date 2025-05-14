@@ -35,17 +35,19 @@ function CryptoNews() {
   return (
     <div className="crypto-news">
       <h1>Cryptocurrency News</h1>
-      <ul>
+      <ul className="news-list">
         {data.articles.map((article, idx) => (
-          <li key={idx}>
-            <a href={article.url} target="_blank" rel="noopener noreferrer">
+          <li key={idx} className="news-item">
+            {article.urlToImage && (
+              <img src={article.urlToImage} alt={article.title} className="news-image" />
+            )}
+            <a href={article.url} target="_blank" rel="noopener noreferrer" className="news-title">
               <strong>{article.title}</strong>
             </a>
-            <div>
-              <em>{article.source.name}</em> |{" "}
-              {new Date(article.publishedAt).toLocaleString()}
+            <div className="news-meta">
+              <em>{article.source.name}</em> | {new Date(article.publishedAt).toLocaleString()}
             </div>
-            <p>{article.description}</p>
+            <p className="news-description">{article.description}</p>
           </li>
         ))}
       </ul>

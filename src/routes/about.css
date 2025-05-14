@@ -7,50 +7,199 @@
 }
 
 .about-container {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding: 50px;
+  padding-top: 80px;
+  font-family: "Poppins", sans-serif;
 }
 
 .profile-card {
-  background-color: #007bff;
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
-  color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  position: relative;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 56px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  background-color: var(--clr);
+  border: 4px solid white;
 }
-
-.profile-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.profile-card h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
 .profile-card p {
-  font-size: 14px;
-  margin: 5px 0;
+  color: #ffff;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 10px;
 }
 
-.profile-card a {
+.card-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 15px 35px -15px rgb(0, 0, 0, 0.5),
+    0 4px 20px 0 rgba(0, 0, 0, 0.3);
+  border: 4px solid white; /* Set border color to white */
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit; /* Match the card-image border radius */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
+.name {
+  padding-top: 70px;
+  font-size: 2px;
+  color: var(--bg);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--bg);
+}
+
+.profile-card h1 {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
-  margin-right: 10px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.profile-card h2 {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.profile-card h3 {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-.profile-card a:hover {
-  color: #ffcc00;
+.profile-card h1:hover {
+  color: #e1306c;
+}
+.profile-card h2:hover {
+  color: #4078c0;
+}
+.profile-card h3:hover {
+  color: #34a853;
+}
+
+/* Add hover animation for profile cards */
+.profile-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4); /* Add a stronger shadow on hover */
+}
+@media only screen and (max-width: 768px) {
+  .about-header {
+    font-size: 15px;
+  }
+
+  .about-container {
+    padding-top: 70px;
+  }
+  .profile-card {
+    width: 200px;
+    padding: 20px;
+    margin: 40px 10px;
+  }
+  .profile-card p {
+    font-size: 11px;
+    line-height: 27px;
+  }
+  .card-image {
+    width: 150px;
+    height: 150px;
+  }
+  .social {
+    font-size: 100px;
+  }
+  .body {
+    margin-top: 20px;
+  }
+  .info .coin-heading p {
+    font-size: 25px;
+  }
+  .info .coin-price {
+    font-size: 15px;
+  }
+  .coin-container .content {
+    padding: 2px;
+  }
+}
+
+@media only screen and (max-width: 451px) {
+  .crypto-news h1 {
+    font-size: 35px !important;
+  }
+  .about-header {
+    font-size: 12px;
+  }
+  .about-container {
+    padding-top: 50px;
+    gap: 17px;
+  }
+  .profile-card {
+    width: 280px;
+  }
+  .profile-card p {
+    font-size: 15px;
+  }
+  .card-image {
+    width: 150px;
+    height: 150px;
+  }
+  .social {
+    font-size: 200px !important;
+  }
+  .body {
+    margin-top: 20px;
+  }
+
+  .info .coin-heading p {
+    font-size: 20px;
+  }
+  .info .coin-price {
+    font-size: 13px;
+  }
+  .coin-container .content {
+    padding: 1px;
+  }
+  .content h1 {
+    font-size: 25px !important;
+  }
 }

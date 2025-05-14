@@ -5,6 +5,8 @@ import Coins from "./components/Coins";
 import Coin from "./routes/coin";
 import Navbar from "./components/Navbar";
 import About from "./routes/about";
+import CryptoNews from "./routes/cryptoNews";
+import AI from "./routes/AI/ai";
 
 import "./index.css";
 
@@ -31,6 +33,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Coins coins={coins} />} />
         <Route path="/about" element={<About />} />
+        <Route path="/news" element={<CryptoNews />} />
+        <Route path="/AI" element={<AI />} />
         <Route path="/coin" element={<Coin />}>
           <Route path=":coinId" element={<Coin />} />
         </Route>

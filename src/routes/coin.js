@@ -208,7 +208,7 @@ const Coin = () => {
                 <h3>Price History</h3>
                 <p>
                   The chart below shows the price history of {coin.name} over
-                  the last 360 days.
+                  the last 30 days.
                 </p>
                 <div className="chart">
                   {loading ? (
