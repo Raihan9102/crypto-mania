@@ -5,8 +5,11 @@ import Coins from "./components/Coins";
 import Coin from "./routes/coin";
 import Navbar from "./components/Navbar";
 import About from "./routes/about";
+<<<<<<< HEAD
 import CryptoNews from "./routes/cryptoNews";
 import AI from "./routes/AI/ai";
+=======
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 
 import "./index.css";
 
@@ -33,8 +36,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Coins coins={coins} />} />
         <Route path="/about" element={<About />} />
+<<<<<<< HEAD
         <Route path="/news" element={<CryptoNews />} />
         <Route path="/AI" element={<AI />} />
+=======
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
         <Route path="/coin" element={<Coin />}>
           <Route path=":coinId" element={<Coin />} />
         </Route>

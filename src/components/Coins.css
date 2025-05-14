@@ -1,7 +1,12 @@
 .container {
+<<<<<<< HEAD
   flex: 1;
   display: flex;
   flex-direction: column;
+=======
+  padding: 50px;
+  padding-top: 20px;
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }
 .home {
   max-width: 600px;
@@ -11,8 +16,11 @@
   align-items: center;
   text-align: center;
   gap: 10px;
+<<<<<<< HEAD
   padding-bottom: 10px;
   cursor: default;
+=======
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }
 .home h1 {
   font-size: 50px;
@@ -20,20 +28,32 @@
 .home p {
   font-size: 25px;
   width: 100%;
+<<<<<<< HEAD
   color: #ffffff;
+=======
+  color: #e3e3e3;
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
   line-height: 2;
 }
 .search {
   padding: 20px;
+<<<<<<< HEAD
   color: var(--bg);
+=======
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
   background-color: white;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   margin: 30px;
   cursor: text;
   margin-bottom: 1px;
+=======
+  margin-top: 30px;
+  cursor: text;
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }
 .search input {
   font-size: 20px;
@@ -46,6 +66,7 @@
   box-shadow: 0px 0px 12px #18191b;
   border-start-end-radius: 15px;
   border-start-start-radius: 15px;
+<<<<<<< HEAD
   padding: 20px;
   font-weight: 700;
   margin-left: 30px;
@@ -66,6 +87,17 @@
   align-items: center;
   justify-content: space-between;
 }
+=======
+  padding: 20px 10px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.coin-name {
+  margin-left: -4rem;
+}
+
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 .coin-row {
   display: flex;
   justify-content: space-between;
@@ -75,9 +107,12 @@
   border-radius: none;
   border: none;
   padding: 10px;
+<<<<<<< HEAD
   margin-left: 30px;
   margin-right: 30px;
   border-collapse: collapse;
+=======
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }
 
 .coin-row:hover {
@@ -92,6 +127,14 @@ img {
   width: auto;
 }
 
+<<<<<<< HEAD
+=======
+.img-symbol {
+  display: flex;
+  align-items: center;
+}
+
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 @media screen and (max-width: 720px) {
   .hide-mobile {
     display: none;
@@ -103,10 +146,18 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
 }
 
 .pagination button {
   background-color: var(--clr);
+=======
+  margin: 20px 0;
+}
+
+.pagination button {
+  background-color: #4000a0;
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
   color: white;
   border: none;
   padding: 10px 20px;
@@ -117,11 +168,16 @@ img {
 }
 
 .pagination button:disabled {
+<<<<<<< HEAD
   background-color: var(--colour);
+=======
+  background-color: #333;
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
   cursor: not-allowed;
 }
 
 .pagination button:hover:not(:disabled) {
+<<<<<<< HEAD
   background-color: var(--color);
 }
 .crypto-news-section {
@@ -188,4 +244,7 @@ img {
 .crypto-table .img-symbol img {
   height: 30px;
   width: 30px;
+=======
+  background-color: #4000a0;
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }

@@ -1,4 +1,5 @@
 .body {
+<<<<<<< HEAD
   margin-top: 40px;
 }
 
@@ -9,6 +10,17 @@
   display: flex;
   flex-direction: column;
   background-color: var(--clr);
+=======
+  margin-top: 100px;
+}
+.coin-container .content {
+  max-width: 740px;
+  margin: 20px auto;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  background-color: #26272b;
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
   box-shadow: 0px 0px 12px #18191b;
   border-radius: 10px;
 }
@@ -19,9 +31,15 @@
 }
 
 .rank-btn {
+<<<<<<< HEAD
   border: 1px solid var(--bg);
   box-shadow: 0px 0px 8px #18191b;
   background-color: var(--bg);
+=======
+  border: 1px solid #6900ff;
+  box-shadow: 0px 0px 8px #6900ff;
+  background-color: #6900ff;
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
   border-radius: 8px;
   padding: 0.5rem;
   display: flex;
@@ -38,6 +56,7 @@
   margin: 1rem 0;
 }
 
+<<<<<<< HEAD
 .info .coin-heading img {
   width: 80px; /* Increase the size of the image */
   height: auto;
@@ -49,11 +68,16 @@
   font-size: 30px;
 }
 
+=======
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 .info .coin-price {
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   font-size: 20px;
+=======
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }
 
 .info p {
@@ -71,6 +95,7 @@ th {
 }
 
 th {
+<<<<<<< HEAD
   background-color: var(--bg);
 }
 
@@ -91,6 +116,9 @@ td:first-child {
 
 td:last-child {
   border-bottom-right-radius: 10px; /* Rounded bottom-right corner */
+=======
+  background-color: #333;
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }
 
 .stats {

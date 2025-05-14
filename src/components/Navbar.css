@@ -1,9 +1,15 @@
 :root {
+<<<<<<< HEAD
   --primary: #fff;
   --bg: #708090;
   --colour: #2f4f4f;
   --color: rgb(21, 27, 76);
   --clr: #293143;
+=======
+  --primary: #ffffff;
+  --bg: #ffffff;
+  --color: rgb(21, 27, 76);
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }
 * {
   margin: 0;
@@ -18,7 +24,13 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
+<<<<<<< HEAD
   background: var(--bg);
+=======
+  background: #151b4c;
+
+  /* min-height: 2000px;*/
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }
 
 .navbar {
@@ -26,13 +38,22 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 8px 7%;
+<<<<<<< HEAD
   cursor: default;
   background-color: var(--clr);
   box-shadow: 0px 0px 12px #18191b;
+=======
+  border-bottom: 3px solid var(--bg);
+  border-end-start-radius: 30px;
+  border-end-end-radius: 30px;
+  cursor: default;
+  background-color: #000133;
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }
 .navbar a {
   font-size: 38px;
   font-weight: 700;
+<<<<<<< HEAD
   color: var(--primary);
   font-style: italic;
   margin-right: 650px;
@@ -40,12 +61,22 @@ body {
 }
 a span {
   color: var(--bg);
+=======
+  color: #3300a9;
+  font-style: italic;
+  margin-right: 750px;
+  cursor: default;
+}
+a span {
+  color: var(--primary);
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }
 
 .navbar-nav a {
   color: #ffffff;
   display: inline-block;
   font-size: 20px;
+<<<<<<< HEAD
   margin: 0 14px;
   font-style: normal;
   font-weight: 400;
@@ -54,12 +85,25 @@ a span {
 
 .navbar-nav a:hover {
   color: var(--bg);
+=======
+  margin: 0 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.navbar-nav a:hover {
+  color: var(--color);
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }
 .navbar-nav a::after {
   content: "";
   display: block;
   padding-bottom: 1.6px;
+<<<<<<< HEAD
   border-bottom: 1.6px solid var(--bg);
+=======
+  border-bottom: 1.6px solid var(--color);
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
   transform: scaleX(0);
   transition: 0.2s linear;
 }
@@ -69,6 +113,7 @@ a span {
 }
 .icon {
   font-size: 33px;
+<<<<<<< HEAD
   color: var(--bg);
   cursor: default;
 }
@@ -203,4 +248,21 @@ a span {
   .crypto-table {
     margin-top: 2px;
   }
+=======
+  color: var(--primary);
+  cursor: default;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000133;
+  color: var(--primary);
+  text-align: center;
+  padding: 8px;
+  border-start-end-radius: 30px;
+  border-start-start-radius: 30px;
+  border-top: 3px solid var(--bg);
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 }

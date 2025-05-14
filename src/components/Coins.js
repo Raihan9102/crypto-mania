@@ -1,5 +1,13 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import "./Coins.css";
+=======
+import Coinitem from "./Coinitem";
+import "./Coins.css";
+import Coin from "../routes/coin";
+import { Link } from "react-router-dom";
+import CryptoNews from "./cryptoNews";
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
 
 const Coins = (props) => {
   const [search, setSearch] = useState("");
@@ -32,7 +40,10 @@ const Coins = (props) => {
         <h1>Crypto Marketplace</h1>
         <p>Selamat Datang di Crypto Mania Marketplace</p>
       </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
       <div>
         <div className="search">
           <input
@@ -43,6 +54,7 @@ const Coins = (props) => {
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
+<<<<<<< HEAD
         <div className="table-container">
           <table className="crypto-table">
             <thead>
@@ -72,6 +84,25 @@ const Coins = (props) => {
             </tbody>
           </table>
         </div>
+=======
+        <div className="heading">
+          <p>#</p>
+          <p className="coin-name">Coins</p>
+          <p>Price</p>
+          <p>24h</p>
+          <p className="hide-mobile">Volume</p>
+          <p className="hide-mobile">Market Cap</p>
+        </div>
+
+        {currentCoins.map((coins) => {
+          return (
+            <Link to={`/coin/${coins.id}`} element={<Coin />} key={coins.id}>
+              <Coinitem coins={coins} />
+            </Link>
+          );
+        })}
+
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
         <div className="pagination">
           <button onClick={prevPage} disabled={currentPage === 1}>
             Previous
@@ -82,11 +113,22 @@ const Coins = (props) => {
           >
             Next
           </button>
+<<<<<<< HEAD
         </div>    
       </div>  
       <footer class="footer">
         <p>2025 CryptoMania</p>
       </footer>
+=======
+        </div>
+
+        {/* Render the CryptoNews component */}
+        <div className="crypto-news-section">
+          <h2>Latest Cryptocurrency News</h2>
+          <CryptoNews />
+        </div>
+      </div>
+>>>>>>> 973406ad9ce4e48c5e7ce1a90a47a28a15a5df21
     </div>
   );
 };
